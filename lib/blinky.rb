@@ -22,6 +22,8 @@ module Blinky
       Dir["#{path}/ci_server_plugins/**/*.rb"].each { |f| require(f) }
       @plugins = []
       instance_eval(File.read("#{path}/plugins.rb"))
+      
+      puts @plugins
 
       @lights = LightFactory.detect_lights(@plugins, @recipes)
     end

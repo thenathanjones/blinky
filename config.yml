@@ -1,0 +1,14 @@
+# If you have a lot of jobs, and you only want to show the status of some of them, 
+# try listing them explicitly
+# A server with basic authentication.
+- 
+#  url: http://ci.wem-uat.local:8153/go/cctray.xml
+#  username: ci
+#  password: ci
+#  jobs: 
+#     - 
+#       name: "CI-Trunk :: Build"
+#       friendly: "Trunk :: Build"
+#     - 
+#       name: "CI-Trunk :: Test"
+#       friendly: "Trunk :: Test"
